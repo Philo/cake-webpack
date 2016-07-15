@@ -1,4 +1,7 @@
 # cake-webpack
+
+[![Build status](https://ci.appveyor.com/api/projects/status/b9g04sfvnytng3nx/branch/master?svg=true)](https://ci.appveyor.com/project/Philo/cake-webpack/branch/master)
+
 Aliases to assist with running Webpack from Cake build scripts
 
 ## Usage
