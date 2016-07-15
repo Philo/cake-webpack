@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Cake.Webpack</id>
+    <title>Cake.Webpack</title>
+    <authors>Phil Oyston</authors>
+    <owners>Phil Oyston</owners>
+    <licenseUrl>https://github.com/Philo/cake-webpack/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Philo/cake-webpack</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/cake-build/graphics/master/png/cake-medium.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Adds Webpack helpers for Cake</summary>
+    <description>Aliases to assist with running Webpack from Cake build scripts</description>
+    <tags>Cake Script Build Webpack</tags>
+  </metadata>
+  <files>
+    <file src="..\..\artifacts\build\Cake.Webpack.xml" target="lib\net45" />
+    <file src="..\..\artifacts\build\Cake.Webpack.dll" target="lib\net45" />
+  </files>
+</package>
