@@ -34,6 +34,14 @@ var searchModule = function() {
 
     a({
         id:0,
+        title:"WebpackLocalRunner",
+        content:"WebpackLocalRunner",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:1,
         title:"WebpackRunnerAliases",
         content:"WebpackRunnerAliases",
         description:'',
@@ -41,17 +49,9 @@ var searchModule = function() {
     });
 
     a({
-        id:1,
-        title:"WebpackRunner",
-        content:"WebpackRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
         id:2,
-        title:"WebpackRunnerSettings",
-        content:"WebpackRunnerSettings",
+        title:"WebpackGlobalRunner",
+        content:"WebpackGlobalRunner",
         description:'',
         tags:''
     });
@@ -66,30 +66,14 @@ var searchModule = function() {
 
     a({
         id:4,
-        title:"WebpackRunnerFactory",
-        content:"WebpackRunnerFactory",
+        title:"WebpackRunnerSettings",
+        content:"WebpackRunnerSettings",
         description:'',
         tags:''
     });
 
     a({
         id:5,
-        title:"WebpackGlobalRunner",
-        content:"WebpackGlobalRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:6,
-        title:"WebpackLocalRunner",
-        content:"WebpackLocalRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:7,
         title:"WebpackLocalRunnerSettings",
         content:"WebpackLocalRunnerSettings",
         description:'',
@@ -97,40 +81,38 @@ var searchModule = function() {
     });
 
     a({
-        id:8,
+        id:6,
         title:"WebpackBuildMode",
         content:"WebpackBuildMode",
         description:'',
         tags:''
     });
 
+    a({
+        id:7,
+        title:"WebpackRunnerFactory",
+        content:"WebpackRunnerFactory",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:8,
+        title:"WebpackRunner",
+        content:"WebpackRunner",
+        description:'',
+        tags:''
+    });
+
+    y({
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunner',
+        title:"WebpackLocalRunner",
+        description:""
+    });
+
     y({
         url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerAliases',
         title:"WebpackRunnerAliases",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1',
-        title:"WebpackRunner<TSettings>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerSettings',
-        title:"WebpackRunnerSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1',
-        title:"NodeToolRunner<TSettings>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerFactory',
-        title:"WebpackRunnerFactory",
         description:""
     });
 
@@ -141,8 +123,14 @@ var searchModule = function() {
     });
 
     y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunner',
-        title:"WebpackLocalRunner",
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1',
+        title:"NodeToolRunner<TSettings>",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerSettings',
+        title:"WebpackRunnerSettings",
         description:""
     });
 
@@ -155,6 +143,18 @@ var searchModule = function() {
     y({
         url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackBuildMode',
         title:"WebpackBuildMode",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerFactory',
+        title:"WebpackRunnerFactory",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1',
+        title:"WebpackRunner<TSettings>",
         description:""
     });
 
