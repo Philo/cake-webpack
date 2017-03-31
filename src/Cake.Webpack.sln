@@ -3,13 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{89A9DF46-7355-4382-BAF7-8344912C3BD3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Webpack", "Cake.Webpack\Cake.Webpack.csproj", "{BF7F8D2F-AC6B-4E4C-8BB6-8E21ABF54DCB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{21155799-9520-4B56-A470-7908484CE86A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Webpack", "src\Cake.Webpack\Cake.Webpack.csproj", "{BF7F8D2F-AC6B-4E4C-8BB6-8E21ABF54DCB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Webpack.Tests", "tests\Cake.Webpack.Tests\Cake.Webpack.Tests.csproj", "{F1D2E76E-D096-462D-903F-8B98A572227D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.Webpack.Tests", "Cake.Webpack.Tests\Cake.Webpack.Tests.csproj", "{F1D2E76E-D096-462D-903F-8B98A572227D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,9 +24,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{BF7F8D2F-AC6B-4E4C-8BB6-8E21ABF54DCB} = {89A9DF46-7355-4382-BAF7-8344912C3BD3}
-		{F1D2E76E-D096-462D-903F-8B98A572227D} = {21155799-9520-4B56-A470-7908484CE86A}
 	EndGlobalSection
 EndGlobal
