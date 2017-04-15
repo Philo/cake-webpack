@@ -34,16 +34,16 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"WebpackLocalRunner",
-        content:"WebpackLocalRunner",
+        title:"WebpackLocalRunnerSettings",
+        content:"WebpackLocalRunnerSettings",
         description:'',
         tags:''
     });
 
     a({
         id:1,
-        title:"WebpackRunnerAliases",
-        content:"WebpackRunnerAliases",
+        title:"WebpackRunnerFactory",
+        content:"WebpackRunnerFactory",
         description:'',
         tags:''
     });
@@ -66,6 +66,22 @@ var searchModule = function() {
 
     a({
         id:4,
+        title:"WebpackLocalRunner",
+        content:"WebpackLocalRunner",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:5,
+        title:"WebpackRunnerAliases",
+        content:"WebpackRunnerAliases",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:6,
         title:"WebpackRunnerSettings",
         content:"WebpackRunnerSettings",
         description:'',
@@ -73,46 +89,30 @@ var searchModule = function() {
     });
 
     a({
-        id:5,
-        title:"WebpackLocalRunnerSettings",
-        content:"WebpackLocalRunnerSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:6,
-        title:"WebpackBuildMode",
-        content:"WebpackBuildMode",
-        description:'',
-        tags:''
-    });
-
-    a({
         id:7,
-        title:"WebpackRunnerFactory",
-        content:"WebpackRunnerFactory",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:8,
         title:"WebpackRunner",
         content:"WebpackRunner",
         description:'',
         tags:''
     });
 
+    a({
+        id:8,
+        title:"WebpackBuildMode",
+        content:"WebpackBuildMode",
+        description:'',
+        tags:''
+    });
+
     y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunner',
-        title:"WebpackLocalRunner",
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunnerSettings',
+        title:"WebpackLocalRunnerSettings",
         description:""
     });
 
     y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerAliases',
-        title:"WebpackRunnerAliases",
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerFactory',
+        title:"WebpackRunnerFactory",
         description:""
     });
 
@@ -129,32 +129,32 @@ var searchModule = function() {
     });
 
     y({
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunner',
+        title:"WebpackLocalRunner",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerAliases',
+        title:"WebpackRunnerAliases",
+        description:""
+    });
+
+    y({
         url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerSettings',
         title:"WebpackRunnerSettings",
         description:""
     });
 
     y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunnerSettings',
-        title:"WebpackLocalRunnerSettings",
+        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1',
+        title:"WebpackRunner<TSettings>",
         description:""
     });
 
     y({
         url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackBuildMode',
         title:"WebpackBuildMode",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerFactory',
-        title:"WebpackRunnerFactory",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1',
-        title:"WebpackRunner<TSettings>",
         description:""
     });
 
