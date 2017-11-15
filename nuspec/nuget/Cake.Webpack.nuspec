@@ -14,8 +14,8 @@
     <tags>Cake Script Build Webpack</tags>
   </metadata>
   <files>
-    <file src="Cake.Webpack.xml" target="lib\net45" />
-    <file src="Cake.Webpack.dll" target="lib\net45" />
-    <file src="Cake.Webpack.pdb" target="lib\net45" />
+    <file src="Cake.Webpack.xml" target="lib\net46" />
+    <file src="Cake.Webpack.dll" target="lib\net46" />
+    <file src="Cake.Webpack.pdb" target="lib\net46" />
   </files>
 </package>
