@@ -34,54 +34,6 @@ var searchModule = function() {
 
     a({
         id:0,
-        title:"WebpackLocalRunnerSettings",
-        content:"WebpackLocalRunnerSettings",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:1,
-        title:"WebpackRunnerFactory",
-        content:"WebpackRunnerFactory",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:2,
-        title:"WebpackGlobalRunner",
-        content:"WebpackGlobalRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:3,
-        title:"NodeToolRunner",
-        content:"NodeToolRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:4,
-        title:"WebpackLocalRunner",
-        content:"WebpackLocalRunner",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:5,
-        title:"WebpackRunnerAliases",
-        content:"WebpackRunnerAliases",
-        description:'',
-        tags:''
-    });
-
-    a({
-        id:6,
         title:"WebpackRunnerSettings",
         content:"WebpackRunnerSettings",
         description:'',
@@ -89,72 +41,120 @@ var searchModule = function() {
     });
 
     a({
-        id:7,
-        title:"WebpackRunner",
-        content:"WebpackRunner",
+        id:1,
+        title:"WebpackLocalRunner",
+        content:"WebpackLocalRunner",
         description:'',
         tags:''
     });
 
     a({
-        id:8,
+        id:2,
         title:"WebpackBuildMode",
         content:"WebpackBuildMode",
         description:'',
         tags:''
     });
 
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunnerSettings',
-        title:"WebpackLocalRunnerSettings",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerFactory',
-        title:"WebpackRunnerFactory",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackGlobalRunner',
-        title:"WebpackGlobalRunner",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1',
-        title:"NodeToolRunner<TSettings>",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunner',
-        title:"WebpackLocalRunner",
-        description:""
-    });
-
-    y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerAliases',
+    a({
+        id:3,
         title:"WebpackRunnerAliases",
-        description:""
+        content:"WebpackRunnerAliases",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:4,
+        title:"WebpackRunnerFactory",
+        content:"WebpackRunnerFactory",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:5,
+        title:"WebpackGlobalRunner",
+        content:"WebpackGlobalRunner",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:6,
+        title:"NodeToolRunner",
+        content:"NodeToolRunner",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:7,
+        title:"WebpackLocalRunnerSettings",
+        content:"WebpackLocalRunnerSettings",
+        description:'',
+        tags:''
+    });
+
+    a({
+        id:8,
+        title:"WebpackRunner",
+        content:"WebpackRunner",
+        description:'',
+        tags:''
     });
 
     y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunnerSettings',
+        url:'/Cake.Webpack/api/Cake.Webpack/WebpackRunnerSettings',
         title:"WebpackRunnerSettings",
         description:""
     });
 
     y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1',
-        title:"WebpackRunner<TSettings>",
+        url:'/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunner',
+        title:"WebpackLocalRunner",
         description:""
     });
 
     y({
-        url:'/Cake.Webpack/Cake.Webpack/api/Cake.Webpack/WebpackBuildMode',
+        url:'/Cake.Webpack/api/Cake.Webpack/WebpackBuildMode',
         title:"WebpackBuildMode",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/api/Cake.Webpack/WebpackRunnerAliases',
+        title:"WebpackRunnerAliases",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/api/Cake.Webpack/WebpackRunnerFactory',
+        title:"WebpackRunnerFactory",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/api/Cake.Webpack/WebpackGlobalRunner',
+        title:"WebpackGlobalRunner",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1',
+        title:"NodeToolRunner<TSettings>",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/api/Cake.Webpack/WebpackLocalRunnerSettings',
+        title:"WebpackLocalRunnerSettings",
+        description:""
+    });
+
+    y({
+        url:'/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1',
+        title:"WebpackRunner<TSettings>",
         description:""
     });
 

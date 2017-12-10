@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="description">
@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.Webpack/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.Webpack/assets/img/favicon.ico" type="image/x-icon">
-        <title>Docs - API - WebpackGlobalRunner Class</title>
+        <title>Cake.Webpack - API - WebpackGlobalRunner Class</title>
         <link href="/Cake.Webpack/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.Webpack/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.Webpack/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -36,7 +36,7 @@
             <header class="main-header">   
                      
                 <a href="/Cake.Webpack/" class="logo">
-                            <span>Docs</span>
+                            <span>Cake.Webpack</span>
                 </a>   
                          
                 <nav class="navbar navbar-static-top" role="navigation">
@@ -82,8 +82,8 @@
                 </section>
                 <section class="sidebar">                    
                     	
-	    <script src="/assets/js/lunr.min.js"></script>
-    <script src="/assets/js/searchIndex.js"></script>
+	    <script src="/Cake.Webpack/assets/js/lunr.min.js"></script>
+    <script src="/Cake.Webpack/assets/js/searchIndex.js"></script>
     <div class="sidebar-form">
         <div class="input-group">
             <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
@@ -108,7 +108,7 @@
             } else {					
                 for(var i = 0; i < results.length; ++i){
                     var res = results[i];
-                    listHtml += "<li><a href='" + res.url + "'>" + res.title + "</a></li>";
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
                 }				
             }
             listHtml += "</ul>";				
@@ -120,6 +120,13 @@
                 runSearch($("#search").val());
             });
         });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
     </script>
 	
     <hr>
@@ -176,9 +183,9 @@
 								<dt>Base Types</dt>
 								<dd>
 									<ul class="list-unstyled">										
-											<li>Tool<wbr>&lt;<wbr>Webpack<wbr>Runner<wbr>Settings&gt;<wbr></li>								
-											<li>NodeToolRunner<wbr>&lt;<wbr>Webpack<wbr>Runner<wbr>Settings&gt;<wbr></li>								
-											<li>WebpackRunner<wbr>&lt;<wbr>Webpack<wbr>Runner<wbr>Settings&gt;<wbr></li>								
+											<li>Tool<wbr>&lt;&gt;<wbr></li>								
+											<li><a href="/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1">NodeToolRunner<wbr>&lt;TSettings&gt;<wbr></a></li>								
+											<li><a href="/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1">WebpackRunner<wbr>&lt;TSettings&gt;<wbr></a></li>								
 									</ul>
 								</dd>				
 							
@@ -188,9 +195,11 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph TD
-	Base0["WebpackRunner&lt;WebpackRunnerSettings&gt;"]--&gt;Type
-	Base1["NodeToolRunner&lt;WebpackRunnerSettings&gt;"]--&gt;Base0
-	Base2["Tool&lt;WebpackRunnerSettings&gt;"]--&gt;Base1
+	Base0["WebpackRunner&lt;TSettings&gt;"]--&gt;Type
+	click Base0 "/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1"
+	Base1["NodeToolRunner&lt;TSettings&gt;"]--&gt;Base0
+	click Base1 "/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1"
+	Base2["Tool&lt;&gt;"]--&gt;Base1
 	Type["WebpackGlobalRunner"]
 class Type type-node
 
@@ -253,18 +262,50 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1/C8D5F704">FromPath<wbr>(DirectoryPath)<wbr></a></td>
+								<td><a href="/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1">NodeToolRunner<wbr>&lt;TSettings&gt;<wbr></a></td>
+								<td>
+									<div>
+    Sets the working directory for npm commands
+    </div>
+											<div><small><em>Inherited from <a href="/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1">NodeToolRunner<wbr>&lt;TSettings&gt;<wbr></a></em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/Cake.Webpack/api/Cake.Webpack/WebpackGlobalRunner/70E621EF">Get<wbr>Tool<wbr>Executable<wbr>Names<wbr>()<wbr></a></td>
-								<td>IEnumerable<wbr>&lt;string&gt;<wbr></td>
+								<td>IEnumerable<wbr>&lt;T&gt;<wbr></td>
 								<td>
 									<div>
     Gets the possible names of the tool executable.
     </div>
 								</td>
 							</tr>
+							<tr>
+								<td><a href="/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1/129E97E9">GetToolName<wbr>()<wbr></a></td>
+								<td>string</td>
+								<td>
+									<div>
+    Gets the name of the tool.
+    </div>
+											<div><small><em>Inherited from <a href="/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1">WebpackRunner<wbr>&lt;TSettings&gt;<wbr></a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1/27507BBA">GetWorkingDirectory<wbr>(TSettings)<wbr></a></td>
+								<td>DirectoryPath</td>
+								<td>
+									<div>
+    Gets the working directory from the NpmRunnerSettings
+                Defaults to the currently set working directory.
+    </div>
+											<div><small><em>Inherited from <a href="/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1">NodeToolRunner<wbr>&lt;TSettings&gt;<wbr></a></em></small></div>
+								</td>
+							</tr>
 					</tbody></table>
 				</div>
 			</div>
 		
+
 
 
 	
