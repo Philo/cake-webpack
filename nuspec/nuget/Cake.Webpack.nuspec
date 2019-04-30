@@ -1,5 +1,5 @@
-<?xml version="1.0"?>
-<package >
+<?xml version="1.0" encoding="utf-8"?>
+<package>
   <metadata>
     <id>Cake.Webpack</id>
     <title>Cake.Webpack</title>
@@ -7,7 +7,7 @@
     <owners>Phil Oyston, cake-contrib</owners>
     <licenseUrl>https://github.com/cake-contrib/Cake.Webpack/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.Webpack</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/cake-build/graphics/master/png/cake-medium.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Adds Webpack helpers for Cake</summary>
     <description>Aliases to assist with running Webpack from Cake build scripts</description>
