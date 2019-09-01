@@ -5,17 +5,18 @@
     <title>Cake.Webpack</title>
     <authors>Phil Oyston</authors>
     <owners>Phil Oyston, cake-contrib</owners>
-    <licenseUrl>https://github.com/cake-contrib/Cake.Webpack/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/cake-contrib/Cake.Webpack</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</iconUrl>
+    <license type="expression">MIT</license>
+    <repository type="git" url="https://github.com/cake-contrib/Cake.Webpack.git"/>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>Adds Webpack helpers for Cake</summary>
     <description>Aliases to assist with running Webpack from Cake build scripts</description>
     <tags>Cake Script Build Webpack</tags>
   </metadata>
   <files>
-    <file src="Cake.Webpack.xml" target="lib\net45" />
-    <file src="Cake.Webpack.dll" target="lib\net45" />
-    <file src="Cake.Webpack.pdb" target="lib\net45" />
+    <file src="Cake.Webpack.xml" target="lib\net461" />
+    <file src="Cake.Webpack.dll" target="lib\net461" />
+    <file src="Cake.Webpack.pdb" target="lib\net461" />
   </files>
 </package>
