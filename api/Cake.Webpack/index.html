@@ -7,7 +7,6 @@
         <link rel="shortcut icon" href="/Cake.Webpack/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.Webpack/assets/img/favicon.ico" type="image/x-icon">
         <title>Cake.Webpack - API - Cake.Webpack Namespace</title>
-        <link href="/Cake.Webpack/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.Webpack/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.Webpack/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/Cake.Webpack/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -22,6 +21,7 @@
         <script src="/Cake.Webpack/assets/js/jquery.slimscroll.min.js"></script>
         <script src="/Cake.Webpack/assets/js/jquery.sticky-kit.min.js"></script>
         <script src="/Cake.Webpack/assets/js/mermaid.min.js"></script>
+        <script src="/Cake.Webpack/assets/js/svg-pan-zoom.min.js"></script>
         <!--[if lt IE 9]>
         <script src="/Cake.Webpack/assets/js/html5shiv.min.js"></script>
         <script src="/Cake.Webpack/assets/js/respond.min.js"></script>
@@ -57,6 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/Cake.Webpack/docs">Documentation</a></li>
+        <li><a href="/Cake.Webpack/tasks">Tasks</a></li>
         <li><a href="/Cake.Webpack/blog">Blog</a></li>
         <li class="active"><a href="/Cake.Webpack/api">API</a></li>
  
@@ -79,7 +80,8 @@
 </div>
 
                 </section>
-                <section class="sidebar">                    
+                <section class="sidebar">    
+                                     
                     	
 	    <script src="/Cake.Webpack/assets/js/lunr.min.js"></script>
     <script src="/Cake.Webpack/assets/js/searchIndex.js"></script>
@@ -141,6 +143,7 @@
 </ul></li>      
 
                     </ul>
+                            
                 </section>                
             </aside>
             
@@ -162,6 +165,7 @@
     </div>
 
 
+
 			<h1 id="ClassTypes">Class Types</h1>
 			<div class="box">
 				<div class="box-body no-padding table-responsive">
@@ -173,7 +177,7 @@
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1">NodeToolRunner<wbr>&lt;TSettings&gt;<wbr></a></td>
+								<td><a href="/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1">NodeToolRunner</a><wbr>&lt;<a href="/Cake.Webpack/api/Cake.Webpack/NodeToolRunner_1#typeparam-TSettings">TSettings</a>&gt;<wbr></td>
 									<td>
     Base Node Tool Runner
     </td>
@@ -197,7 +201,7 @@
     </td>
 							</tr>
 							<tr>
-								<td><a href="/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1">WebpackRunner<wbr>&lt;TSettings&gt;<wbr></a></td>
+								<td><a href="/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1">WebpackRunner</a><wbr>&lt;<a href="/Cake.Webpack/api/Cake.Webpack/WebpackRunner_1#typeparam-TSettings">TSettings</a>&gt;<wbr></td>
 									<td>
     Base Webpack runner
     </td>
@@ -224,6 +228,7 @@
 				</div>
 			</div>
 		
+
 			<h1 id="EnumTypes">Enum Types</h1>
 			<div class="box">
 				<div class="box-body no-padding table-responsive">
@@ -244,6 +249,7 @@
 				</div>
 			</div>
 		
+
 	
 </section>
                 
@@ -267,22 +273,53 @@
                 $(document.body).removeClass('sidebar-open');
             });
             
-            $(document).load(function() {
+            $(document).ready(function() {
                 mermaid.initialize(
                 {
                     flowchart:
                     {
-                        htmlLabels: false,
-                        useMaxWidth:false
-                    }
-                });  
-                mermaid.init(undefined, ".mermaid")
-                $('svg').addClass('img-responsive');
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
                 
                 $('pre code').each(function(i, block) {
                     hljs.highlightBlock(block);
                 });  
             });
+
             hljs.initHighlightingOnLoad();
 
             // Back to top

@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<link rel="self" href="http://cake-contrib.github.io/Cake.Webpack" />
 	<id>http://cake-contrib.github.io/Cake.Webpack</id>
 	<title>Cake.Webpack</title>
-	<rights>2017</rights>
-	<updated>2017-12-10T11:09:24Z</updated>
+	<link rel="self" href="http://cake-contrib.github.io/Cake.Webpack" />
+	<rights>2019</rights>
+	<updated>2019-09-01T20:28:29Z</updated>
 	<entry>
+		<id>http://cake-contrib.github.io/Cake.Webpack/blog/new-release-0.2.0</id>
+		<title>New Release - 0.2.0</title>
 		<author>
 			<name>gep13</name>
 		</author>
 		<link href="http://cake-contrib.github.io/Cake.Webpack/blog/new-release-0.2.0" />
-		<id>http://cake-contrib.github.io/Cake.Webpack/blog/new-release-0.2.0</id>
-		<title>New Release - 0.2.0</title>
 		<updated>2017-03-31T00:00:00Z</updated>
 		<content>&lt;h1 id="release"&gt;0.2.0 Release&lt;/h1&gt;
 &lt;p&gt;In the release, the following issues have been closed:&lt;/p&gt;
