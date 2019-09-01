@@ -8,7 +8,8 @@ BuildParameters.SetParameters(context: Context,
                             title: "Cake.Webpack",
                             repositoryOwner: "cake-contrib",
                             repositoryName: "Cake.Webpack",
-                            appVeyorAccountName: "cakecontrib");
+                            appVeyorAccountName: "cakecontrib",
+                            shouldRunGitVersion: true);
 
 BuildParameters.PrintParameters(Context);
 
